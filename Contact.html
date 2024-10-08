@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Us - Phone Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>/* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #000; /* Black background */
+            color: #fff; /* White text for visibility */
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: #1e1e1e; /* Dark background */
+            color: #fff;
+            padding: 10px 0;
+        }
+        
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header nav ul {
+            list-style: none;
+            display: flex;
+        }
+        
+        header nav ul li {
+            margin-left: 20px;
+        }
+        
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        header h1 {
+            font-size: 24px;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background-color: #111;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+        
+        .hero h2 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: #fd79a8;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease-in-out;
+        }
+        
+        .cta-button:hover {
+            background-color: #e84393;
+        }
+        
+        /* Product Section */
+        .products {
+            background-color: #1e1e1e;
+            padding: 40px 20px;
+            text-align: center;
+            animation: slideUp 1.5s ease-in-out;
+        }
+        
+        .products h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #fd79a8;
+        }
+        
+        .product-card {
+            display: inline-block;
+            background-color: #333;
+            margin: 15px;
+            padding: 20px;
+            border-radius: 10px;
+            width: 250px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+        
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        
+        .product-card h3 {
+            margin-top: 15px;
+            font-size: 24px;
+            color: #fd79a8;
+        }
+        
+        .product-card p {
+            color: #fff;
+        }
+        
+        /* Form Styles (for Contact Page) */
+        #contact-form {
+            padding: 40px 20px;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+        
+        #contact-form form {
+            display: inline-block;
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+        
+        #contact-form label {
+            display: block;
+            font-size: 18px;
+            margin: 10px 0;
+            color: #fd79a8;
+        }
+        
+        #contact-form input[type="text"],
+        #contact-form input[type="email"],
+        #contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #555;
+            border-radius: 5px;
+            background-color: #1e1e1e;
+            color: #fff;
+        }
+        
+        #contact-form input[type="submit"] {
+            background-color: #fd79a8;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+        
+        #contact-form input[type="submit"]:hover {
+            background-color: #e84393;
+        }
+        
+        /* About Page Section */
+        #about-content {
+            padding: 40px 20px;
+            text-align: center;
+            animation: slideUp 1.5s ease-in-out;
+        }
+        
+        #about-content h3 {
+            font-size: 36px;
+            color: #fd79a8;
+            margin-bottom: 20px;
+        }
+        
+        #about-content p {
+            font-size: 18px;
+            max-width: 800px;
+            margin: 0 auto;
+            color: #ddd;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #1e1e1e;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+        
+        footer p {
+            font-size: 14px;
+        }
+        
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes slideUp {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Phone Shop</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Contact Us</h2>
+        <p>We would love to hear from you! Please fill out the form below:</p>
+    </section>
+
+    <section id="contact-form">
+        <form action="#" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea><br>
+
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Phone Shop. All rights reserved.</p>
+    </footer>
+</body>
+</html>

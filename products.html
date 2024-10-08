@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Our Products - Phone Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>/* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #000; /* Black background */
+            color: #fff; /* White text for visibility */
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: #1e1e1e;
+            color: #fff;
+            padding: 10px 0;
+        }
+        
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header nav ul {
+            list-style: none;
+            display: flex;
+        }
+        
+        header nav ul li {
+            margin-left: 20px;
+        }
+        
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        header h1 {
+            font-size: 24px;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background-color: #111; /* Darker black */
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+        
+        .hero h2 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        
+        /* Product Section */
+        .products {
+            background-color: #1e1e1e;
+            padding: 40px 20px;
+            text-align: center;
+            animation: slideUp 1.5s ease-in-out;
+        }
+        
+        .products h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #fd79a8; /* Pink for headings */
+        }
+        
+        .product-card {
+            display: inline-block;
+            background-color: #333;
+            margin: 15px;
+            padding: 20px;
+            border-radius: 10px;
+            width: 250px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+        
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        
+        .product-card h3 {
+            margin-top: 15px;
+            font-size: 24px;
+            color: #fd79a8; /* Pink for product names */
+        }
+        
+        .product-card p {
+            color: #fff;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #1e1e1e;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+        
+        footer p {
+            font-size: 14px;
+        }
+        
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes slideUp {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Phone Shop</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Our Latest Products</h2>
+        <p>Explore the best smartphones and gadgets available at unbeatable prices!</p>
+    </section>
+
+    <section id="products" class="products">
+        <h2>Our Products</h2>
+
+        <!-- Product 1 -->
+        <div class="product-card">
+            <img src="phone1.jpg" alt="Phone 1">
+            <h3>Smartphone X1</h3>
+            <p>Price: $699</p>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+            <img src="phone2.jpg" alt="Phone 2">
+            <h3>Smartphone Z Pro</h3>
+            <p>Price: $799</p>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+            <img src="phone3.jpg" alt="Phone 3">
+            <h3>Smartphone Lite 2024</h3>
+            <p>Price: $499</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Phone Shop. All rights reserved.</p>
+    </footer>
+</body>
+</html>
